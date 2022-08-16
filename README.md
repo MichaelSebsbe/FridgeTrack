@@ -10,4 +10,5 @@ An iOS app to manage your groceries
 
 # Demo
 ![](https://github.com/MichaelSebsbe/FridgeTrack/blob/main/Simulator%20Screen%20Recording%20-%20iPhone%2013%20Pro%20-%202022-08-16%20at%2015.36.46.gif)
+
 Date on Recording is Aug 16, 2022
