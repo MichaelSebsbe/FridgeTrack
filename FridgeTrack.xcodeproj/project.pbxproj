@@ -7,20 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ADA8B18028AC1F7800E925C3 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA8B17F28AC1F7800E925C3 /* Colors.swift */; };
+		ADA8B18028AC1F7800E925C3 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA8B17F28AC1F7800E925C3 /* AppColors.swift */; };
+		ADBB045B28E6691100114348 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBB045A28E6691100114348 /* CartViewController.swift */; };
+		ADBB045D28E66AF700114348 /* CartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBB045C28E66AF700114348 /* CartItem.swift */; };
+		ADBB046128E66DC000114348 /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBB046028E66DC000114348 /* CartTableViewCell.swift */; };
+		ADBB046328E677E700114348 /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBB046228E677E700114348 /* AppFonts.swift */; };
+		ADBB046528E7B4A400114348 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADBB046428E7B4A400114348 /* GoogleService-Info.plist */; };
+		ADBB046828E7B7D600114348 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = ADBB046728E7B7D600114348 /* FirebaseAnalytics */; };
+		ADBB046A28E7B7D600114348 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = ADBB046928E7B7D600114348 /* FirebaseAuth */; };
+		ADBB046C28E7B7D600114348 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = ADBB046B28E7B7D600114348 /* FirebaseFirestore */; };
+		ADBB046E28E7B7D600114348 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = ADBB046D28E7B7D600114348 /* FirebaseFirestoreSwift */; };
+		ADBB047028E7B7D600114348 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = ADBB046F28E7B7D600114348 /* FirebaseMessaging */; };
 		ADEBF28A2788C5040030AC08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEBF2892788C5040030AC08 /* AppDelegate.swift */; };
 		ADEBF28C2788C5040030AC08 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEBF28B2788C5040030AC08 /* SceneDelegate.swift */; };
 		ADEBF2912788C5040030AC08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADEBF28F2788C5040030AC08 /* Main.storyboard */; };
 		ADEBF2932788C5050030AC08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADEBF2922788C5050030AC08 /* Assets.xcassets */; };
 		ADEBF2962788C5050030AC08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADEBF2942788C5050030AC08 /* LaunchScreen.storyboard */; };
-		ADEBF29E2788C69E0030AC08 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEBF29D2788C69E0030AC08 /* Item.swift */; };
+		ADEBF29E2788C69E0030AC08 /* FridgeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEBF29D2788C69E0030AC08 /* FridgeItem.swift */; };
 		ADEBF2A02788C8610030AC08 /* ItemsInFridgeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEBF29F2788C8610030AC08 /* ItemsInFridgeTableViewController.swift */; };
 		ADEBF2A22788CBE00030AC08 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEBF2A12788CBE00030AC08 /* ItemTableViewCell.swift */; };
 		ADEBF2A42789050C0030AC08 /* AddandEditTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEBF2A32789050B0030AC08 /* AddandEditTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		ADA8B17F28AC1F7800E925C3 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		ADA8B17F28AC1F7800E925C3 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		ADBB045A28E6691100114348 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		ADBB045C28E66AF700114348 /* CartItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItem.swift; sourceTree = "<group>"; };
+		ADBB046028E66DC000114348 /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
+		ADBB046228E677E700114348 /* AppFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
+		ADBB046428E7B4A400114348 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ADEBF2862788C5040030AC08 /* FridgeTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FridgeTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADEBF2892788C5040030AC08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADEBF28B2788C5040030AC08 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,7 +43,7 @@
 		ADEBF2922788C5050030AC08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADEBF2952788C5050030AC08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ADEBF2972788C5050030AC08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ADEBF29D2788C69E0030AC08 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		ADEBF29D2788C69E0030AC08 /* FridgeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridgeItem.swift; sourceTree = "<group>"; };
 		ADEBF29F2788C8610030AC08 /* ItemsInFridgeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsInFridgeTableViewController.swift; sourceTree = "<group>"; };
 		ADEBF2A12788CBE00030AC08 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		ADEBF2A32789050B0030AC08 /* AddandEditTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddandEditTableViewController.swift; sourceTree = "<group>"; };
@@ -39,6 +54,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADBB046828E7B7D600114348 /* FirebaseAnalytics in Frameworks */,
+				ADBB046A28E7B7D600114348 /* FirebaseAuth in Frameworks */,
+				ADBB047028E7B7D600114348 /* FirebaseMessaging in Frameworks */,
+				ADBB046C28E7B7D600114348 /* FirebaseFirestore in Frameworks */,
+				ADBB046E28E7B7D600114348 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,7 +68,8 @@
 		AD61C4F6286CD3FA00978F46 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				ADEBF29D2788C69E0030AC08 /* Item.swift */,
+				ADEBF29D2788C69E0030AC08 /* FridgeItem.swift */,
+				ADBB045C28E66AF700114348 /* CartItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -59,7 +80,9 @@
 				ADEBF2942788C5050030AC08 /* LaunchScreen.storyboard */,
 				ADEBF28F2788C5040030AC08 /* Main.storyboard */,
 				ADEBF2A12788CBE00030AC08 /* ItemTableViewCell.swift */,
-				ADA8B17F28AC1F7800E925C3 /* Colors.swift */,
+				ADBB046028E66DC000114348 /* CartTableViewCell.swift */,
+				ADA8B17F28AC1F7800E925C3 /* AppColors.swift */,
+				ADBB046228E677E700114348 /* AppFonts.swift */,
 			);
 			path = VIews;
 			sourceTree = "<group>";
@@ -69,6 +92,7 @@
 			children = (
 				ADEBF29F2788C8610030AC08 /* ItemsInFridgeTableViewController.swift */,
 				ADEBF2A32789050B0030AC08 /* AddandEditTableViewController.swift */,
+				ADBB045A28E6691100114348 /* CartViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -99,6 +123,7 @@
 				AD61C4F6286CD3FA00978F46 /* Model */,
 				ADEBF2922788C5050030AC08 /* Assets.xcassets */,
 				ADEBF2972788C5050030AC08 /* Info.plist */,
+				ADBB046428E7B4A400114348 /* GoogleService-Info.plist */,
 			);
 			path = FridgeTrack;
 			sourceTree = "<group>";
@@ -119,6 +144,13 @@
 			dependencies = (
 			);
 			name = FridgeTrack;
+			packageProductDependencies = (
+				ADBB046728E7B7D600114348 /* FirebaseAnalytics */,
+				ADBB046928E7B7D600114348 /* FirebaseAuth */,
+				ADBB046B28E7B7D600114348 /* FirebaseFirestore */,
+				ADBB046D28E7B7D600114348 /* FirebaseFirestoreSwift */,
+				ADBB046F28E7B7D600114348 /* FirebaseMessaging */,
+			);
 			productName = FridgeTrack;
 			productReference = ADEBF2862788C5040030AC08 /* FridgeTrack.app */;
 			productType = "com.apple.product-type.application";
@@ -147,6 +179,9 @@
 				Base,
 			);
 			mainGroup = ADEBF27D2788C5040030AC08;
+			packageReferences = (
+				ADBB046628E7B7D600114348 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = ADEBF2872788C5040030AC08 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -162,6 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADEBF2962788C5050030AC08 /* LaunchScreen.storyboard in Resources */,
+				ADBB046528E7B4A400114348 /* GoogleService-Info.plist in Resources */,
 				ADEBF2932788C5050030AC08 /* Assets.xcassets in Resources */,
 				ADEBF2912788C5040030AC08 /* Main.storyboard in Resources */,
 			);
@@ -175,10 +211,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADEBF28A2788C5040030AC08 /* AppDelegate.swift in Sources */,
-				ADEBF29E2788C69E0030AC08 /* Item.swift in Sources */,
+				ADEBF29E2788C69E0030AC08 /* FridgeItem.swift in Sources */,
 				ADEBF2A22788CBE00030AC08 /* ItemTableViewCell.swift in Sources */,
-				ADA8B18028AC1F7800E925C3 /* Colors.swift in Sources */,
+				ADA8B18028AC1F7800E925C3 /* AppColors.swift in Sources */,
+				ADBB045D28E66AF700114348 /* CartItem.swift in Sources */,
+				ADBB046328E677E700114348 /* AppFonts.swift in Sources */,
+				ADBB045B28E6691100114348 /* CartViewController.swift in Sources */,
 				ADEBF2A02788C8610030AC08 /* ItemsInFridgeTableViewController.swift in Sources */,
+				ADBB046128E66DC000114348 /* CartTableViewCell.swift in Sources */,
 				ADEBF28C2788C5040030AC08 /* SceneDelegate.swift in Sources */,
 				ADEBF2A42789050C0030AC08 /* AddandEditTableViewController.swift in Sources */,
 			);
@@ -336,6 +376,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -344,7 +385,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.FridgeTrack;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MichaelSebsbe.FridgeTrack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -366,6 +407,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -374,7 +416,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.FridgeTrack;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MichaelSebsbe.FridgeTrack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -404,6 +446,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ADBB046628E7B7D600114348 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ADBB046728E7B7D600114348 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ADBB046628E7B7D600114348 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		ADBB046928E7B7D600114348 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ADBB046628E7B7D600114348 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		ADBB046B28E7B7D600114348 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ADBB046628E7B7D600114348 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		ADBB046D28E7B7D600114348 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ADBB046628E7B7D600114348 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		ADBB046F28E7B7D600114348 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ADBB046628E7B7D600114348 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ADEBF27E2788C5040030AC08 /* Project object */;
 }

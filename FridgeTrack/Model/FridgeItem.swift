@@ -7,12 +7,21 @@
 
 import UIKit
 
-struct Item: Equatable{
+struct FridgeItem: Equatable{
     var name: String
     var quantity: Int
     var caloriesPerPiece: Int
     var expirationDate: Date
     var image: UIImage
+    var isExpired: Bool {
+        if expirationDate.timeIntervalSinceNow < 0 {
+            return true
+        }
+        return false
+    }
+    var daysUntilExpiry: Int {
+        return Int((expirationDate.timeIntervalSinceNow/86400).rounded(.up))
+    }
     
     init(name: String, quantity: Int, caloriesPerPiece: Int, expirationDate: Date, image: UIImage){
         self.name = name
@@ -30,22 +39,22 @@ struct Item: Equatable{
         self.image = UIImage(data: codableItem.imageData)!
     }
     
-    static func == (lhs: Item, rhs: Item) -> Bool {
+    static func == (lhs: FridgeItem, rhs: FridgeItem) -> Bool {
         return lhs.name == rhs.name
     }
     
-    static func loadSavedItems() -> [Item]?{
+    static func loadSavedItems() -> [FridgeItem]?{
         return nil
     }
-    static func loadSampleItems() -> [Item] {
-        let item1 = Item(name: "Milk", quantity: 1, caloriesPerPiece: 1000, expirationDate: Date(), image: UIImage(named: "Milk")!)
-        let item2 = Item(name: "Ground Beef", quantity: 1, caloriesPerPiece: 1000, expirationDate: Date(), image: UIImage(named: "GroundBeef")!)
+    static func loadSampleItems() -> [FridgeItem] {
+        let item1 = FridgeItem(name: "Milk", quantity: 1, caloriesPerPiece: 1000, expirationDate: Date(), image: UIImage(named: "Milk")!)
+        let item2 = FridgeItem(name: "Ground Beef", quantity: 1, caloriesPerPiece: 1000, expirationDate: Date(), image: UIImage(named: "GroundBeef")!)
         return [item1, item2]
     }
-    static func applySelectionSort(to items: [Item]) -> [Item]{
+    static func applySelectionSort(to items: [FridgeItem]) -> [FridgeItem]{
         
         
-        var sortedItems = [Item]()
+        var sortedItems = [FridgeItem]()
         var tempArray = items
         
         for _ in tempArray{
@@ -71,7 +80,7 @@ struct CodableItem: Codable{
     var expirationDate: Date
     var imageData: Data
     
-    init(item: Item){
+    init(item: FridgeItem){
         self.name = item.name
         self.quantity = item.quantity
         self.caloriesPerPiece = item.caloriesPerPiece
@@ -97,10 +106,10 @@ struct CodableItem: Codable{
         try? codedItems?.write(to: archiveURL, options: .noFileProtection)
     }
     
-    static func convertToItems(codableItems: [CodableItem]) -> [Item]{
-        var items = [Item]()
+    static func convertToItems(codableItems: [CodableItem]) -> [FridgeItem]{
+        var items = [FridgeItem]()
         for codableItem in codableItems {
-            items.append(Item(codableItem: codableItem))
+            items.append(FridgeItem(codableItem: codableItem))
         }
         return items
     }

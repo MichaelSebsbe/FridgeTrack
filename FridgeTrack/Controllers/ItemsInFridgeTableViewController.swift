@@ -9,7 +9,7 @@ import UIKit
 
 class ItemsInFridgeTableViewController: UITableViewController {
     
-    var itemsInFridge = [Item]() {
+    var itemsInFridge = [FridgeItem]() {
         didSet{
             saveChanges()
         }
@@ -38,21 +38,7 @@ class ItemsInFridgeTableViewController: UITableViewController {
         
         // Configure the cell...
         cell.update(with: item)
-        
-        //if expired
-        if item.expirationDate.timeIntervalSinceNow < 0 {
-                cell.warningImageView.isHidden = false
-                cell.warningImageView.tintColor = .systemRed
-        }
-        
-        // if exp in 3 days
-        else if item.expirationDate.timeIntervalSinceNow < (86_000 * 3){
-            cell.warningImageView.isHidden = false
-            cell.warningImageView.tintColor = .systemOrange
-        } else {
-            cell.warningImageView.isHidden = true
-        }
-        
+
         
         return cell
     }
@@ -121,15 +107,18 @@ class ItemsInFridgeTableViewController: UITableViewController {
             let items = CodableItem.convertToItems(codableItems: decodedItems)
             itemsInFridge = items
         }else{
-            itemsInFridge = Item.loadSampleItems()
+            itemsInFridge = FridgeItem.loadSampleItems()
         }
         sortItemsInFridgeByExpirationDate()
     }
     
     fileprivate func setupUI() {
         navigationItem.leftBarButtonItem = editButtonItem
-        tableView.backgroundColor = AppColors.bgColor
-        navigationItem.leftBarButtonItem?.tintColor = AppColors.buttonColors
+        tableView.backgroundColor = UIColor(named: "Background")
+        navigationItem.leftBarButtonItem?.tintColor = UIColor(named: "Buttons")
+        navigationItem.rightBarButtonItem?.tintColor = UIColor(named:"Buttons")
+        tableView.separatorColor = UIColor(named: "SecondayFont")
+        
     }
     
     fileprivate func sortItemsInFridgeByExpirationDate(){

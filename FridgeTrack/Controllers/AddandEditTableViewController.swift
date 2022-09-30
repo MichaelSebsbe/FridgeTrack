@@ -25,7 +25,8 @@ class AddandEditTableViewController: UITableViewController, UINavigationControll
     
     
     var isEditingDate = true
-    var itemInFridge: Item?
+    var itemInFridge: FridgeItem?
+    var imagePickerUIAC: UIAlertController!
     
     
     
@@ -37,16 +38,22 @@ class AddandEditTableViewController: UITableViewController, UINavigationControll
         updateSaveButtonState()
         
         setupUI()
+        imagePickerUIAC = prepareImagePickerAlertController()
         
     }
     // UI customization methods
     
     private func setupUI(){
-        saveBarButton.tintColor = AppColors.buttonColors
-        navigationItem.leftBarButtonItem?.tintColor = AppColors.buttonColors
-        navigationItem.rightBarButtonItem?.tintColor = AppColors.buttonColors
-        view.backgroundColor = AppColors.bgColor
-        addPhotoButton.tintColor = AppColors.buttonColors
+        saveBarButton.tintColor = UIColor(named: "Buttons")
+        navigationItem.leftBarButtonItem?.tintColor = UIColor(named: "Buttons")
+        //navigationItem.rightBarButtonItem?.tintColor = UIColor(named: "Buttons")
+        view.backgroundColor = UIColor(named: "Background")
+        addPhotoButton.tintColor = UIColor(named: "Buttons")
+        
+        for textField in [nameTextField, caloriesTextField]{
+            textField?.backgroundColor = UIColor(named: "Background")
+            
+        }
         
     }
     
@@ -56,9 +63,8 @@ class AddandEditTableViewController: UITableViewController, UINavigationControll
     }
     
     fileprivate func updateInputFields() {
-        guard let itemInFridge = itemInFridge else {
-            return
-        }
+        guard let itemInFridge = itemInFridge else{return}
+        
         navigationItem.title = "Edit Item"
         nameTextField.text = itemInFridge.name
         caloriesTextField.text = "\(itemInFridge.caloriesPerPiece)"
@@ -95,25 +101,26 @@ class AddandEditTableViewController: UITableViewController, UINavigationControll
     }
     
     @IBAction func addPhotoButtonPressed(_ sender: UIButton) {
+
+        imagePickerUIAC.popoverPresentationController?.sourceView = sender //for IPad
+        
+        present(imagePickerUIAC, animated: true, completion: nil)
+    }
+    
+    func prepareImagePickerAlertController() -> UIAlertController{
         let alertController = UIAlertController(title: "Select Source", message: nil, preferredStyle: .actionSheet)
         let imagePicker = UIImagePickerController()
         imagePicker.delegate = self
         
-        alertController.popoverPresentationController?.sourceView = sender //for IPad
-        
         if UIImagePickerController.isSourceTypeAvailable(.camera){
-            
-            
-            let cameraAction = UIAlertAction(title: "Camera", style: .default, handler:  {_ in
+            let cameraAction = UIAlertAction(title: "Camera", style: .default, handler: {_ in
                 imagePicker.sourceType = .camera
                 self.present(imagePicker, animated: true, completion: nil)
             })
             alertController.addAction(cameraAction)
-            
         }
         
         if UIImagePickerController.isSourceTypeAvailable(.photoLibrary){
-            
             let photoLibraryAction = UIAlertAction(title: "Photo Library", style: .default, handler: { _ in
                 imagePicker.sourceType = .photoLibrary
                 self.present(imagePicker, animated: true, completion: nil)
@@ -123,11 +130,10 @@ class AddandEditTableViewController: UITableViewController, UINavigationControll
         
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
         alertController.addAction(cancelAction)
-        alertController.view.tintColor = AppColors.buttonColors
-        present(alertController, animated: true, completion: nil)
+        alertController.view.tintColor = UIColor(named: "Buttons")
+        
+        return alertController
     }
-    
-    
     
     @IBAction func nameTextFieldEditingChanged(_ sender: UITextField) {
         updateSaveButtonState()
@@ -169,7 +175,7 @@ class AddandEditTableViewController: UITableViewController, UINavigationControll
             let expirationDate = expirationDatePicker.date
             let photo = itemPhotoImageView.image!
             
-            itemInFridge = Item(name: name, quantity: quantity, caloriesPerPiece: caloriesPerServing, expirationDate: expirationDate, image: photo)
+            itemInFridge = FridgeItem(name: name, quantity: quantity, caloriesPerPiece: caloriesPerServing, expirationDate: expirationDate, image: photo)
         }
         
         print(itemInFridge?.expirationDate.timeIntervalSinceNow)

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>910305383634-ub5t7jocj03ih45119j7nnp0746leu26.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.910305383634-ub5t7jocj03ih45119j7nnp0746leu26</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBXJRNz5-BdaWKZggC-McO4OuxdeiMDjvQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>910305383634</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.MichaelSebsbe.FridgeTrack</string>
+	<key>PROJECT_ID</key>
+	<string>fridgetrack-5f1a8</string>
+	<key>STORAGE_BUCKET</key>
+	<string>fridgetrack-5f1a8.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:910305383634:ios:f856244d92264cc285c90b</string>
+</dict>
+</plist>
