@@ -17,7 +17,15 @@
 		ADBB046A28E7B7D600114348 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = ADBB046928E7B7D600114348 /* FirebaseAuth */; };
 		ADBB046C28E7B7D600114348 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = ADBB046B28E7B7D600114348 /* FirebaseFirestore */; };
 		ADBB046E28E7B7D600114348 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = ADBB046D28E7B7D600114348 /* FirebaseFirestoreSwift */; };
-		ADBB047028E7B7D600114348 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = ADBB046F28E7B7D600114348 /* FirebaseMessaging */; };
+		ADBB047328E7C2D000114348 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBB047228E7C2D000114348 /* LoginViewController.swift */; };
+		ADBB052728E7C8F300114348 /* FirebaseAuthUI in Frameworks */ = {isa = PBXBuildFile; productRef = ADBB052628E7C8F300114348 /* FirebaseAuthUI */; };
+		ADBB052928E7C8F300114348 /* FirebaseEmailAuthUI in Frameworks */ = {isa = PBXBuildFile; productRef = ADBB052828E7C8F300114348 /* FirebaseEmailAuthUI */; };
+		ADBB052B28E7C8F300114348 /* FirebaseFacebookAuthUI in Frameworks */ = {isa = PBXBuildFile; productRef = ADBB052A28E7C8F300114348 /* FirebaseFacebookAuthUI */; };
+		ADBB052D28E7C8F300114348 /* FirebaseGoogleAuthUI in Frameworks */ = {isa = PBXBuildFile; productRef = ADBB052C28E7C8F300114348 /* FirebaseGoogleAuthUI */; };
+		ADBF442A28E8EF97007B34AA /* FridgeTrackUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBF442928E8EF97007B34AA /* FridgeTrackUser.swift */; };
+		ADBF442C28E8F029007B34AA /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBF442B28E8F029007B34AA /* UserManager.swift */; };
+		ADBF442E28E8F38D007B34AA /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBF442D28E8F38D007B34AA /* MainTabBarController.swift */; };
+		ADEBA20428F632C70036DFE5 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEBA20328F632C70036DFE5 /* UserView.swift */; };
 		ADEBF28A2788C5040030AC08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEBF2892788C5040030AC08 /* AppDelegate.swift */; };
 		ADEBF28C2788C5040030AC08 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEBF28B2788C5040030AC08 /* SceneDelegate.swift */; };
 		ADEBF2912788C5040030AC08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADEBF28F2788C5040030AC08 /* Main.storyboard */; };
@@ -29,6 +37,23 @@
 		ADEBF2A42789050C0030AC08 /* AddandEditTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEBF2A32789050B0030AC08 /* AddandEditTableViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		ADBB051E28E7C76800114348 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADBB047628E7C76800114348 /* FirebaseAuthUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D69E25921DD4BD000CFA49B;
+			remoteInfo = FirebaseAuthUI;
+		};
+		ADBB052028E7C76800114348 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADBB047628E7C76800114348 /* FirebaseAuthUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D69E26221DD4BD100CFA49B;
+			remoteInfo = FirebaseAuthUITests;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		ADA8B17F28AC1F7800E925C3 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		ADBB045A28E6691100114348 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +61,170 @@
 		ADBB046028E66DC000114348 /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
 		ADBB046228E677E700114348 /* AppFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
 		ADBB046428E7B4A400114348 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ADBB047128E7C12E00114348 /* FridgeTrack.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FridgeTrack.entitlements; sourceTree = "<group>"; };
+		ADBB047228E7C2D000114348 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		ADBB047628E7C76800114348 /* FirebaseAuthUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = FirebaseAuthUI.xcodeproj; sourceTree = "<group>"; };
+		ADBB047928E7C76800114348 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		ADBB047B28E7C76800114348 /* FUIAuthTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FUIAuthTest.m; sourceTree = "<group>"; };
+		ADBB047C28E7C76800114348 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ADBB047D28E7C76800114348 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADBB047F28E7C76800114348 /* FUIAccountSettingsOperationDeleteAccount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FUIAccountSettingsOperationDeleteAccount.h; sourceTree = "<group>"; };
+		ADBB048028E7C76800114348 /* FUIAccountSettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FUIAccountSettingsViewController.m; sourceTree = "<group>"; };
+		ADBB048128E7C76800114348 /* FUIAuthStrings.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FUIAuthStrings.m; sourceTree = "<group>"; };
+		ADBB048228E7C76800114348 /* FUIAuthSignInButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FUIAuthSignInButton.m; sourceTree = "<group>"; };
+		ADBB048328E7C76800114348 /* FUIAccountSettingsOperationSignOut.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FUIAccountSettingsOperationSignOut.h; sourceTree = "<group>"; };
+		ADBB048428E7C76800114348 /* FUIAuthErrorUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FUIAuthErrorUtils.m; sourceTree = "<group>"; };
+		ADBB048728E7C76800114348 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/FirebaseAuthUI.strings; sourceTree = "<group>"; };
+		ADBB048828E7C76800114348 /* ur */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ur; path = ur.lproj/FirebaseAuthUI.strings; sourceTree = "<group>"; };
+		ADBB048928E7C76800114348 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/FirebaseAuthUI.strings; sourceTree = "<group>"; };
+		ADBB048A28E7C76800114348 /* es-SV */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-SV"; path = "es-SV.lproj/FirebaseAuthUI.strings"; sourceTree = "<group>"; };
+		ADBB048B28E7C76800114348 /* zh-Hant-TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant-TW"; path = "zh-Hant-TW.lproj/FirebaseAuthUI.strings"; sourceTree = "<group>"; };
+		ADBB048C28E7C76800114348 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/FirebaseAuthUI.strings; sourceTree = "<group>"; };
+		ADBB048D28E7C76800114348 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/FirebaseAuthUI.strings; sourceTree = "<group>"; };
+		ADBB048E28E7C76800114348 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/FirebaseAuthUI.strings"; sourceTree = "<group>"; };
+		ADBB048F28E7C76800114348 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/FirebaseAuthUI.strings; sourceTree = "<group>"; };
+		ADBB049028E7C76800114348 /* fa */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fa; path = fa.lproj/FirebaseAuthUI.strings; sourceTree = "<group>"; };
+		ADBB049128E7C76800114348 /* mr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = mr; path = mr.lproj/FirebaseAuthUI.strings; sourceTree = "<group>"; };
+		ADBB049228E7C76800114348 /* es-GT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-GT"; path = "es-GT.lproj/FirebaseAuthUI.strings"; sourceTree = "<group>"; };
+		ADBB049328E7C76800114348 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/FirebaseAuthUI.strings; sourceTree = "<group>"; };
+		ADBB049428E7C76800114348 /* en-CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-CA"; path = "en-CA.lproj/FirebaseAuthUI.strings"; sourceTree = "<group>"; };
+		ADBB049528E7C76800114348 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/FirebaseAuthUI.strings; sourceTree = "<group>"; };
+		ADBB049628E7C76800114348 /* es-PY */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-PY"; path = "es-PY.lproj/FirebaseAuthUI.strings"; sourceTree = "<group>"; };
+		ADBB049728E7C76800114348 /* gu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = gu; path = gu.lproj/FirebaseAuthUI.strings; sourceTree = "<group>"; };
+		ADBB049828E7C76800114348 /* kn */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = kn; path = kn.lproj/FirebaseAuthUI.strings; sourceTree = "<group>"; };
+		ADBB049928E7C76800114348 /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/FirebaseAuthUI.strings; sourceTree = "<group>"; };
+		ADBB049A28E7C76800114348 /* es-US */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-US"; path = "es-US.lproj/FirebaseAuthUI.strings"; sourceTree = "<group>"; };
+		ADBB049B28E7C76800114348 /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/FirebaseAuthUI.strings"; sourceTree = "<group>"; };
+		ADBB049C28E7C76800114348 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/FirebaseAuthUI.strings; sourceTree = "<group>"; };
+		ADBB049D28E7C76800114348 /* es-VE */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-VE"; path = "es-VE.lproj/FirebaseAuthUI.strings"; sourceTree = "<group>"; };
+		ADBB049E28E7C76800114348 /* es-CL */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-CL"; path = "es-CL.lproj/FirebaseAuthUI.strings"; sourceTree = "<group>"; };
+		ADBB049F28E7C76800114348 /* sl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sl; path = sl.lproj/FirebaseAuthUI.strings; sourceTree = "<group>"; };
+		ADBB04A028E7C76800114348 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/FirebaseAuthUI.strings; sourceTree = "<group>"; };
+		ADBB04A128E7C76800114348 /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/FirebaseAuthUI.strings"; sourceTree = "<group>"; };
+		ADBB04A228E7C76800114348 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/FirebaseAuthUI.strings; sourceTree = "<group>"; };
+		ADBB04A328E7C76800114348 /* bg */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = bg; path = bg.lproj/FirebaseAuthUI.strings; sourceTree = "<group>"; };
+		ADBB04A428E7C76800114348 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/FirebaseAuthUI.strings; sourceTree = "<group>"; };
+		ADBB04A528E7C76800114348 /* sr-Latn */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "sr-Latn"; path = "sr-Latn.lproj/FirebaseAuthUI.strings"; sourceTree = "<group>"; };
+		ADBB04A628E7C76800114348 /* nn-NO */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "nn-NO"; path = "nn-NO.lproj/FirebaseAuthUI.strings"; sourceTree = "<group>"; };
+		ADBB04A728E7C76800114348 /* es-PA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-PA"; path = "es-PA.lproj/FirebaseAuthUI.strings"; sourceTree = "<group>"; };
+		ADBB04A828E7C76800114348 /* en-SG */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-SG"; path = "en-SG.lproj/FirebaseAuthUI.strings"; sourceTree = "<group>"; };
+		ADBB04A928E7C76800114348 /* sr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sr; path = sr.lproj/FirebaseAuthUI.strings; sourceTree = "<group>"; };
+		ADBB04AA28E7C76800114348 /* ms */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ms; path = ms.lproj/FirebaseAuthUI.strings; sourceTree = "<group>"; };
+		ADBB04AB28E7C76800114348 /* es-CR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-CR"; path = "es-CR.lproj/FirebaseAuthUI.strings"; sourceTree = "<group>"; };
+		ADBB04AC28E7C76800114348 /* ta */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ta; path = ta.lproj/FirebaseAuthUI.strings; sourceTree = "<group>"; };
+		ADBB04AD28E7C76800114348 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/FirebaseAuthUI.strings; sourceTree = "<group>"; };
+		ADBB04AE28E7C76800114348 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/FirebaseAuthUI.strings; sourceTree = "<group>"; };
+		ADBB04AF28E7C76800114348 /* es-AR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-AR"; path = "es-AR.lproj/FirebaseAuthUI.strings"; sourceTree = "<group>"; };
+		ADBB04B028E7C76800114348 /* es-PE */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-PE"; path = "es-PE.lproj/FirebaseAuthUI.strings"; sourceTree = "<group>"; };
+		ADBB04B128E7C76800114348 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/FirebaseAuthUI.strings; sourceTree = "<group>"; };
+		ADBB04B228E7C76800114348 /* en-IE */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-IE"; path = "en-IE.lproj/FirebaseAuthUI.strings"; sourceTree = "<group>"; };
+		ADBB04B328E7C76800114348 /* fil */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fil; path = fil.lproj/FirebaseAuthUI.strings; sourceTree = "<group>"; };
+		ADBB04B428E7C76800114348 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/FirebaseAuthUI.strings"; sourceTree = "<group>"; };
+		ADBB04B528E7C76800114348 /* es-CO */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-CO"; path = "es-CO.lproj/FirebaseAuthUI.strings"; sourceTree = "<group>"; };
+		ADBB04B628E7C76800114348 /* gsw */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = gsw; path = gsw.lproj/FirebaseAuthUI.strings; sourceTree = "<group>"; };
+		ADBB04B728E7C76800114348 /* en-ZA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-ZA"; path = "en-ZA.lproj/FirebaseAuthUI.strings"; sourceTree = "<group>"; };
+		ADBB04B828E7C76800114348 /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/FirebaseAuthUI.strings; sourceTree = "<group>"; };
+		ADBB04B928E7C76800114348 /* es-PR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-PR"; path = "es-PR.lproj/FirebaseAuthUI.strings"; sourceTree = "<group>"; };
+		ADBB04BA28E7C76800114348 /* de-AT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "de-AT"; path = "de-AT.lproj/FirebaseAuthUI.strings"; sourceTree = "<group>"; };
+		ADBB04BB28E7C76800114348 /* en-AU */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-AU"; path = "en-AU.lproj/FirebaseAuthUI.strings"; sourceTree = "<group>"; };
+		ADBB04BC28E7C76800114348 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/FirebaseAuthUI.strings; sourceTree = "<group>"; };
+		ADBB04BD28E7C76800114348 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/FirebaseAuthUI.strings; sourceTree = "<group>"; };
+		ADBB04BE28E7C76800114348 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/FirebaseAuthUI.strings"; sourceTree = "<group>"; };
+		ADBB04BF28E7C76800114348 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/FirebaseAuthUI.strings; sourceTree = "<group>"; };
+		ADBB04C028E7C76800114348 /* lv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = lv; path = lv.lproj/FirebaseAuthUI.strings; sourceTree = "<group>"; };
+		ADBB04C128E7C76800114348 /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/FirebaseAuthUI.strings"; sourceTree = "<group>"; };
+		ADBB04C228E7C76800114348 /* lt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = lt; path = lt.lproj/FirebaseAuthUI.strings; sourceTree = "<group>"; };
+		ADBB04C328E7C76800114348 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/FirebaseAuthUI.strings; sourceTree = "<group>"; };
+		ADBB04C428E7C76800114348 /* es-DO */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-DO"; path = "es-DO.lproj/FirebaseAuthUI.strings"; sourceTree = "<group>"; };
+		ADBB04C528E7C76800114348 /* fr-CH */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "fr-CH"; path = "fr-CH.lproj/FirebaseAuthUI.strings"; sourceTree = "<group>"; };
+		ADBB04C628E7C76800114348 /* es-NI */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-NI"; path = "es-NI.lproj/FirebaseAuthUI.strings"; sourceTree = "<group>"; };
+		ADBB04C728E7C76800114348 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/FirebaseAuthUI.strings; sourceTree = "<group>"; };
+		ADBB04C828E7C76800114348 /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/FirebaseAuthUI.strings; sourceTree = "<group>"; };
+		ADBB04C928E7C76800114348 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/FirebaseAuthUI.strings; sourceTree = "<group>"; };
+		ADBB04CA28E7C76800114348 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/FirebaseAuthUI.strings; sourceTree = "<group>"; };
+		ADBB04CB28E7C76800114348 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/FirebaseAuthUI.strings; sourceTree = "<group>"; };
+		ADBB04CC28E7C76800114348 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/FirebaseAuthUI.strings; sourceTree = "<group>"; };
+		ADBB04CD28E7C76800114348 /* de-CH */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "de-CH"; path = "de-CH.lproj/FirebaseAuthUI.strings"; sourceTree = "<group>"; };
+		ADBB04CE28E7C76800114348 /* bn */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = bn; path = bn.lproj/FirebaseAuthUI.strings; sourceTree = "<group>"; };
+		ADBB04CF28E7C76800114348 /* es-EC */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-EC"; path = "es-EC.lproj/FirebaseAuthUI.strings"; sourceTree = "<group>"; };
+		ADBB04D028E7C76800114348 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/FirebaseAuthUI.strings"; sourceTree = "<group>"; };
+		ADBB04D128E7C76800114348 /* es-BO */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-BO"; path = "es-BO.lproj/FirebaseAuthUI.strings"; sourceTree = "<group>"; };
+		ADBB04D228E7C76800114348 /* ro */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ro; path = ro.lproj/FirebaseAuthUI.strings; sourceTree = "<group>"; };
+		ADBB04D328E7C76800114348 /* ln */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ln; path = ln.lproj/FirebaseAuthUI.strings; sourceTree = "<group>"; };
+		ADBB04D428E7C76800114348 /* es-UY */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-UY"; path = "es-UY.lproj/FirebaseAuthUI.strings"; sourceTree = "<group>"; };
+		ADBB04D528E7C76800114348 /* es-HN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-HN"; path = "es-HN.lproj/FirebaseAuthUI.strings"; sourceTree = "<group>"; };
+		ADBB04D628E7C76800114348 /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = hr.lproj/FirebaseAuthUI.strings; sourceTree = "<group>"; };
+		ADBB04D728E7C76800114348 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/FirebaseAuthUI.strings; sourceTree = "<group>"; };
+		ADBB04D828E7C76800114348 /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/FirebaseAuthUI.strings; sourceTree = "<group>"; };
+		ADBB04D928E7C76800114348 /* zh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh; path = zh.lproj/FirebaseAuthUI.strings; sourceTree = "<group>"; };
+		ADBB04DA28E7C76800114348 /* en-IN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-IN"; path = "en-IN.lproj/FirebaseAuthUI.strings"; sourceTree = "<group>"; };
+		ADBB04DB28E7C76800114348 /* FUIAccountSettingsOperationUpdateEmail.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FUIAccountSettingsOperationUpdateEmail.h; sourceTree = "<group>"; };
+		ADBB04DC28E7C76800114348 /* FUIAccountSettingsOperationForgotPassword.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FUIAccountSettingsOperationForgotPassword.h; sourceTree = "<group>"; };
+		ADBB04DD28E7C76800114348 /* FUIAccountSettingsOperationUnlinkAccount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FUIAccountSettingsOperationUnlinkAccount.m; sourceTree = "<group>"; };
+		ADBB04DE28E7C76800114348 /* FUIAuthUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FUIAuthUtils.m; sourceTree = "<group>"; };
+		ADBB04DF28E7C76800114348 /* FUIAccountSettingsOperationUpdatePassword.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FUIAccountSettingsOperationUpdatePassword.m; sourceTree = "<group>"; };
+		ADBB04E028E7C76800114348 /* FUIAccountSettingsOperationUpdateName.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FUIAccountSettingsOperationUpdateName.h; sourceTree = "<group>"; };
+		ADBB04E228E7C76800114348 /* ic_account_circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_account_circle.png; sourceTree = "<group>"; };
+		ADBB04E328E7C76800114348 /* ic_visibility@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_visibility@2x.png"; sourceTree = "<group>"; };
+		ADBB04E428E7C76800114348 /* FUIAuthTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FUIAuthTableViewCell.xib; sourceTree = "<group>"; };
+		ADBB04E528E7C76800114348 /* ic_visibility@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_visibility@3x.png"; sourceTree = "<group>"; };
+		ADBB04E628E7C76800114348 /* FUIStaticContentTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FUIStaticContentTableViewController.xib; sourceTree = "<group>"; };
+		ADBB04E728E7C76800114348 /* ic_visibility.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_visibility.png; sourceTree = "<group>"; };
+		ADBB04E828E7C76800114348 /* ic_account_circle3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_account_circle3x.png; sourceTree = "<group>"; };
+		ADBB04E928E7C76800114348 /* FUIAccountSettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FUIAccountSettingsViewController.xib; sourceTree = "<group>"; };
+		ADBB04EA28E7C76800114348 /* ic_visibility_off@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_visibility_off@3x.png"; sourceTree = "<group>"; };
+		ADBB04EB28E7C76800114348 /* FUIAuthPickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FUIAuthPickerViewController.xib; sourceTree = "<group>"; };
+		ADBB04EC28E7C76800114348 /* FUIInputTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FUIInputTableViewCell.xib; sourceTree = "<group>"; };
+		ADBB04ED28E7C76800114348 /* ic_visibility_off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_visibility_off@2x.png"; sourceTree = "<group>"; };
+		ADBB04EE28E7C76800114348 /* ic_account_circle2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_account_circle2x.png; sourceTree = "<group>"; };
+		ADBB04EF28E7C76800114348 /* ic_visibility_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_visibility_off.png; sourceTree = "<group>"; };
+		ADBB04F028E7C76800114348 /* FUIPasswordTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FUIPasswordTableViewCell.xib; sourceTree = "<group>"; };
+		ADBB04F128E7C76800114348 /* FUIAuthTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FUIAuthTableViewCell.m; sourceTree = "<group>"; };
+		ADBB04F228E7C76800114348 /* FUIAccountSettingsOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FUIAccountSettingsOperation.m; sourceTree = "<group>"; };
+		ADBB04F328E7C76800114348 /* FUIStaticContentTableViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FUIStaticContentTableViewManager.m; sourceTree = "<group>"; };
+		ADBB04F428E7C76800114348 /* FUIStaticContentTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FUIStaticContentTableViewController.m; sourceTree = "<group>"; };
+		ADBB04F528E7C76800114348 /* FUIAuthErrors.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FUIAuthErrors.m; sourceTree = "<group>"; };
+		ADBB04F628E7C76800114348 /* FUIAccountSettingsOperationSignOut.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FUIAccountSettingsOperationSignOut.m; sourceTree = "<group>"; };
+		ADBB04F728E7C76800114348 /* FUIAuthSignInButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FUIAuthSignInButton.h; sourceTree = "<group>"; };
+		ADBB04FA28E7C76800114348 /* FUIAuthPickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FUIAuthPickerViewController.h; sourceTree = "<group>"; };
+		ADBB04FB28E7C76800114348 /* FUIPrivacyAndTermsOfServiceView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FUIPrivacyAndTermsOfServiceView.h; sourceTree = "<group>"; };
+		ADBB04FC28E7C76800114348 /* FirebaseAuthUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirebaseAuthUI.h; sourceTree = "<group>"; };
+		ADBB04FD28E7C76800114348 /* FUIAuthBaseViewController_Internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FUIAuthBaseViewController_Internal.h; sourceTree = "<group>"; };
+		ADBB04FE28E7C76800114348 /* FUIAuth_Internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FUIAuth_Internal.h; sourceTree = "<group>"; };
+		ADBB04FF28E7C76800114348 /* FUIAuthTableHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FUIAuthTableHeaderView.h; sourceTree = "<group>"; };
+		ADBB050028E7C76800114348 /* FUIAccountSettingsOperationType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FUIAccountSettingsOperationType.h; sourceTree = "<group>"; };
+		ADBB050128E7C76800114348 /* FUIAuthBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FUIAuthBaseViewController.h; sourceTree = "<group>"; };
+		ADBB050228E7C76800114348 /* FUIAuthProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FUIAuthProvider.h; sourceTree = "<group>"; };
+		ADBB050328E7C76800114348 /* FUIAuth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FUIAuth.h; sourceTree = "<group>"; };
+		ADBB050428E7C76800114348 /* FUIAuthErrorUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FUIAuthErrorUtils.h; sourceTree = "<group>"; };
+		ADBB050528E7C76800114348 /* FUIAuthStrings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FUIAuthStrings.h; sourceTree = "<group>"; };
+		ADBB050628E7C76800114348 /* FUIAccountSettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FUIAccountSettingsViewController.h; sourceTree = "<group>"; };
+		ADBB050728E7C76800114348 /* FUIAuthUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FUIAuthUtils.h; sourceTree = "<group>"; };
+		ADBB050828E7C76800114348 /* FUIAuthTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FUIAuthTableViewCell.h; sourceTree = "<group>"; };
+		ADBB050928E7C76800114348 /* FUIAuthErrors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FUIAuthErrors.h; sourceTree = "<group>"; };
+		ADBB050A28E7C76800114348 /* FUIPrivacyAndTermsOfServiceView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FUIPrivacyAndTermsOfServiceView.m; sourceTree = "<group>"; };
+		ADBB050B28E7C76800114348 /* FUIAccountSettingsOperationDeleteAccount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FUIAccountSettingsOperationDeleteAccount.m; sourceTree = "<group>"; };
+		ADBB050C28E7C76800114348 /* FUIAuthPickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FUIAuthPickerViewController.m; sourceTree = "<group>"; };
+		ADBB050D28E7C76800114348 /* FUIAccountSettingsOperationUnlinkAccount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FUIAccountSettingsOperationUnlinkAccount.h; sourceTree = "<group>"; };
+		ADBB050E28E7C76800114348 /* FUIAccountSettingsOperationForgotPassword.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FUIAccountSettingsOperationForgotPassword.m; sourceTree = "<group>"; };
+		ADBB050F28E7C76800114348 /* FUIAccountSettingsOperationUpdateEmail.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FUIAccountSettingsOperationUpdateEmail.m; sourceTree = "<group>"; };
+		ADBB051028E7C76800114348 /* FUIAuthBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FUIAuthBaseViewController.m; sourceTree = "<group>"; };
+		ADBB051128E7C76800114348 /* FUIAccountSettingsOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FUIAccountSettingsOperation.h; sourceTree = "<group>"; };
+		ADBB051228E7C76800114348 /* FUIAuthTableHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FUIAuthTableHeaderView.m; sourceTree = "<group>"; };
+		ADBB051328E7C76800114348 /* FUIAccountSettingsOperationUpdateName.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FUIAccountSettingsOperationUpdateName.m; sourceTree = "<group>"; };
+		ADBB051428E7C76800114348 /* FUIAccountSettingsOperationUpdatePassword.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FUIAccountSettingsOperationUpdatePassword.h; sourceTree = "<group>"; };
+		ADBB051528E7C76800114348 /* FUIAuth.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FUIAuth.m; sourceTree = "<group>"; };
+		ADBB051628E7C76800114348 /* FUIStaticContentTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FUIStaticContentTableViewController.h; sourceTree = "<group>"; };
+		ADBB051728E7C76800114348 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADBB051828E7C76800114348 /* FUIAccountSettingsOperation_Internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FUIAccountSettingsOperation_Internal.h; sourceTree = "<group>"; };
+		ADBB051928E7C76800114348 /* FUIStaticContentTableViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FUIStaticContentTableViewManager.h; sourceTree = "<group>"; };
+		ADBB051A28E7C76800114348 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		ADBB051B28E7C76800114348 /* Podfile.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
+		ADBB052528E7C85F00114348 /* FirebaseUI-iOS-master */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "FirebaseUI-iOS-master"; path = "../../../Downloads/FirebaseUI-iOS-master"; sourceTree = "<group>"; };
+		ADBF442928E8EF97007B34AA /* FridgeTrackUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridgeTrackUser.swift; sourceTree = "<group>"; };
+		ADBF442B28E8F029007B34AA /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		ADBF442D28E8F38D007B34AA /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		ADEBA20328F632C70036DFE5 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 		ADEBF2862788C5040030AC08 /* FridgeTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FridgeTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADEBF2892788C5040030AC08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADEBF28B2788C5040030AC08 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,10 +243,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADBB052D28E7C8F300114348 /* FirebaseGoogleAuthUI in Frameworks */,
 				ADBB046828E7B7D600114348 /* FirebaseAnalytics in Frameworks */,
+				ADBB052728E7C8F300114348 /* FirebaseAuthUI in Frameworks */,
 				ADBB046A28E7B7D600114348 /* FirebaseAuth in Frameworks */,
-				ADBB047028E7B7D600114348 /* FirebaseMessaging in Frameworks */,
+				ADBB052928E7C8F300114348 /* FirebaseEmailAuthUI in Frameworks */,
 				ADBB046C28E7B7D600114348 /* FirebaseFirestore in Frameworks */,
+				ADBB052B28E7C8F300114348 /* FirebaseFacebookAuthUI in Frameworks */,
 				ADBB046E28E7B7D600114348 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -70,6 +262,8 @@
 			children = (
 				ADEBF29D2788C69E0030AC08 /* FridgeItem.swift */,
 				ADBB045C28E66AF700114348 /* CartItem.swift */,
+				ADBF442928E8EF97007B34AA /* FridgeTrackUser.swift */,
+				ADBF442B28E8F029007B34AA /* UserManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -79,6 +273,7 @@
 			children = (
 				ADEBF2942788C5050030AC08 /* LaunchScreen.storyboard */,
 				ADEBF28F2788C5040030AC08 /* Main.storyboard */,
+				ADEBA20328F632C70036DFE5 /* UserView.swift */,
 				ADEBF2A12788CBE00030AC08 /* ItemTableViewCell.swift */,
 				ADBB046028E66DC000114348 /* CartTableViewCell.swift */,
 				ADA8B17F28AC1F7800E925C3 /* AppColors.swift */,
@@ -90,6 +285,8 @@
 		AD61C4F8286CD45F00978F46 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				ADBB047228E7C2D000114348 /* LoginViewController.swift */,
+				ADBF442D28E8F38D007B34AA /* MainTabBarController.swift */,
 				ADEBF29F2788C8610030AC08 /* ItemsInFridgeTableViewController.swift */,
 				ADEBF2A32789050B0030AC08 /* AddandEditTableViewController.swift */,
 				ADBB045A28E6691100114348 /* CartViewController.swift */,
@@ -97,11 +294,160 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		ADBB047428E7C76700114348 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADBB052528E7C85F00114348 /* FirebaseUI-iOS-master */,
+				ADBB047528E7C76800114348 /* FirebaseAuthUI */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ADBB047528E7C76800114348 /* FirebaseAuthUI */ = {
+			isa = PBXGroup;
+			children = (
+				ADBB047628E7C76800114348 /* FirebaseAuthUI.xcodeproj */,
+				ADBB047928E7C76800114348 /* README.md */,
+				ADBB047A28E7C76800114348 /* FirebaseAuthUITests */,
+				ADBB047E28E7C76800114348 /* Sources */,
+				ADBB051A28E7C76800114348 /* Podfile */,
+				ADBB051B28E7C76800114348 /* Podfile.lock */,
+			);
+			name = FirebaseAuthUI;
+			path = "../../../Downloads/FirebaseUI-iOS-master/FirebaseAuthUI";
+			sourceTree = "<group>";
+		};
+		ADBB047728E7C76800114348 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADBB051F28E7C76800114348 /* FirebaseAuthUI.framework */,
+				ADBB052128E7C76800114348 /* FirebaseAuthUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ADBB047A28E7C76800114348 /* FirebaseAuthUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ADBB047B28E7C76800114348 /* FUIAuthTest.m */,
+				ADBB047C28E7C76800114348 /* GoogleService-Info.plist */,
+				ADBB047D28E7C76800114348 /* Info.plist */,
+			);
+			path = FirebaseAuthUITests;
+			sourceTree = "<group>";
+		};
+		ADBB047E28E7C76800114348 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				ADBB047F28E7C76800114348 /* FUIAccountSettingsOperationDeleteAccount.h */,
+				ADBB048028E7C76800114348 /* FUIAccountSettingsViewController.m */,
+				ADBB048128E7C76800114348 /* FUIAuthStrings.m */,
+				ADBB048228E7C76800114348 /* FUIAuthSignInButton.m */,
+				ADBB048328E7C76800114348 /* FUIAccountSettingsOperationSignOut.h */,
+				ADBB048428E7C76800114348 /* FUIAuthErrorUtils.m */,
+				ADBB048528E7C76800114348 /* Strings */,
+				ADBB04DB28E7C76800114348 /* FUIAccountSettingsOperationUpdateEmail.h */,
+				ADBB04DC28E7C76800114348 /* FUIAccountSettingsOperationForgotPassword.h */,
+				ADBB04DD28E7C76800114348 /* FUIAccountSettingsOperationUnlinkAccount.m */,
+				ADBB04DE28E7C76800114348 /* FUIAuthUtils.m */,
+				ADBB04DF28E7C76800114348 /* FUIAccountSettingsOperationUpdatePassword.m */,
+				ADBB04E028E7C76800114348 /* FUIAccountSettingsOperationUpdateName.h */,
+				ADBB04E128E7C76800114348 /* Resources */,
+				ADBB04F128E7C76800114348 /* FUIAuthTableViewCell.m */,
+				ADBB04F228E7C76800114348 /* FUIAccountSettingsOperation.m */,
+				ADBB04F328E7C76800114348 /* FUIStaticContentTableViewManager.m */,
+				ADBB04F428E7C76800114348 /* FUIStaticContentTableViewController.m */,
+				ADBB04F528E7C76800114348 /* FUIAuthErrors.m */,
+				ADBB04F628E7C76800114348 /* FUIAccountSettingsOperationSignOut.m */,
+				ADBB04F728E7C76800114348 /* FUIAuthSignInButton.h */,
+				ADBB04F828E7C76800114348 /* Public */,
+				ADBB050A28E7C76800114348 /* FUIPrivacyAndTermsOfServiceView.m */,
+				ADBB050B28E7C76800114348 /* FUIAccountSettingsOperationDeleteAccount.m */,
+				ADBB050C28E7C76800114348 /* FUIAuthPickerViewController.m */,
+				ADBB050D28E7C76800114348 /* FUIAccountSettingsOperationUnlinkAccount.h */,
+				ADBB050E28E7C76800114348 /* FUIAccountSettingsOperationForgotPassword.m */,
+				ADBB050F28E7C76800114348 /* FUIAccountSettingsOperationUpdateEmail.m */,
+				ADBB051028E7C76800114348 /* FUIAuthBaseViewController.m */,
+				ADBB051128E7C76800114348 /* FUIAccountSettingsOperation.h */,
+				ADBB051228E7C76800114348 /* FUIAuthTableHeaderView.m */,
+				ADBB051328E7C76800114348 /* FUIAccountSettingsOperationUpdateName.m */,
+				ADBB051428E7C76800114348 /* FUIAccountSettingsOperationUpdatePassword.h */,
+				ADBB051528E7C76800114348 /* FUIAuth.m */,
+				ADBB051628E7C76800114348 /* FUIStaticContentTableViewController.h */,
+				ADBB051728E7C76800114348 /* Info.plist */,
+				ADBB051828E7C76800114348 /* FUIAccountSettingsOperation_Internal.h */,
+				ADBB051928E7C76800114348 /* FUIStaticContentTableViewManager.h */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		ADBB048528E7C76800114348 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				ADBB048628E7C76800114348 /* FirebaseAuthUI.strings */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		ADBB04E128E7C76800114348 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ADBB04E228E7C76800114348 /* ic_account_circle.png */,
+				ADBB04E328E7C76800114348 /* ic_visibility@2x.png */,
+				ADBB04E428E7C76800114348 /* FUIAuthTableViewCell.xib */,
+				ADBB04E528E7C76800114348 /* ic_visibility@3x.png */,
+				ADBB04E628E7C76800114348 /* FUIStaticContentTableViewController.xib */,
+				ADBB04E728E7C76800114348 /* ic_visibility.png */,
+				ADBB04E828E7C76800114348 /* ic_account_circle3x.png */,
+				ADBB04E928E7C76800114348 /* FUIAccountSettingsViewController.xib */,
+				ADBB04EA28E7C76800114348 /* ic_visibility_off@3x.png */,
+				ADBB04EB28E7C76800114348 /* FUIAuthPickerViewController.xib */,
+				ADBB04EC28E7C76800114348 /* FUIInputTableViewCell.xib */,
+				ADBB04ED28E7C76800114348 /* ic_visibility_off@2x.png */,
+				ADBB04EE28E7C76800114348 /* ic_account_circle2x.png */,
+				ADBB04EF28E7C76800114348 /* ic_visibility_off.png */,
+				ADBB04F028E7C76800114348 /* FUIPasswordTableViewCell.xib */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		ADBB04F828E7C76800114348 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				ADBB04F928E7C76800114348 /* FirebaseAuthUI */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		ADBB04F928E7C76800114348 /* FirebaseAuthUI */ = {
+			isa = PBXGroup;
+			children = (
+				ADBB04FA28E7C76800114348 /* FUIAuthPickerViewController.h */,
+				ADBB04FB28E7C76800114348 /* FUIPrivacyAndTermsOfServiceView.h */,
+				ADBB04FC28E7C76800114348 /* FirebaseAuthUI.h */,
+				ADBB04FD28E7C76800114348 /* FUIAuthBaseViewController_Internal.h */,
+				ADBB04FE28E7C76800114348 /* FUIAuth_Internal.h */,
+				ADBB04FF28E7C76800114348 /* FUIAuthTableHeaderView.h */,
+				ADBB050028E7C76800114348 /* FUIAccountSettingsOperationType.h */,
+				ADBB050128E7C76800114348 /* FUIAuthBaseViewController.h */,
+				ADBB050228E7C76800114348 /* FUIAuthProvider.h */,
+				ADBB050328E7C76800114348 /* FUIAuth.h */,
+				ADBB050428E7C76800114348 /* FUIAuthErrorUtils.h */,
+				ADBB050528E7C76800114348 /* FUIAuthStrings.h */,
+				ADBB050628E7C76800114348 /* FUIAccountSettingsViewController.h */,
+				ADBB050728E7C76800114348 /* FUIAuthUtils.h */,
+				ADBB050828E7C76800114348 /* FUIAuthTableViewCell.h */,
+				ADBB050928E7C76800114348 /* FUIAuthErrors.h */,
+			);
+			path = FirebaseAuthUI;
+			sourceTree = "<group>";
+		};
 		ADEBF27D2788C5040030AC08 = {
 			isa = PBXGroup;
 			children = (
 				ADEBF2882788C5040030AC08 /* FridgeTrack */,
 				ADEBF2872788C5040030AC08 /* Products */,
+				ADBB047428E7C76700114348 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,6 +462,7 @@
 		ADEBF2882788C5040030AC08 /* FridgeTrack */ = {
 			isa = PBXGroup;
 			children = (
+				ADBB047128E7C12E00114348 /* FridgeTrack.entitlements */,
 				ADEBF2892788C5040030AC08 /* AppDelegate.swift */,
 				ADEBF28B2788C5040030AC08 /* SceneDelegate.swift */,
 				AD61C4F8286CD45F00978F46 /* Controllers */,
@@ -149,7 +496,10 @@
 				ADBB046928E7B7D600114348 /* FirebaseAuth */,
 				ADBB046B28E7B7D600114348 /* FirebaseFirestore */,
 				ADBB046D28E7B7D600114348 /* FirebaseFirestoreSwift */,
-				ADBB046F28E7B7D600114348 /* FirebaseMessaging */,
+				ADBB052628E7C8F300114348 /* FirebaseAuthUI */,
+				ADBB052828E7C8F300114348 /* FirebaseEmailAuthUI */,
+				ADBB052A28E7C8F300114348 /* FirebaseFacebookAuthUI */,
+				ADBB052C28E7C8F300114348 /* FirebaseGoogleAuthUI */,
 			);
 			productName = FridgeTrack;
 			productReference = ADEBF2862788C5040030AC08 /* FridgeTrack.app */;
@@ -177,6 +527,89 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
+				ur,
+				he,
+				"es-SV",
+				"zh-Hant-TW",
+				ar,
+				el,
+				"zh-Hans",
+				ja,
+				fa,
+				mr,
+				"es-GT",
+				"en-CA",
+				uk,
+				"es-PY",
+				gu,
+				kn,
+				nb,
+				"es-US",
+				"en-GB",
+				es,
+				"es-VE",
+				"es-CL",
+				sl,
+				da,
+				"es-419",
+				it,
+				bg,
+				sk,
+				"sr-Latn",
+				"nn-NO",
+				"es-PA",
+				"en-SG",
+				sr,
+				ms,
+				"es-CR",
+				ta,
+				sv,
+				cs,
+				"es-AR",
+				"es-PE",
+				ko,
+				"en-IE",
+				fil,
+				"zh-Hant",
+				"es-CO",
+				gsw,
+				"en-ZA",
+				hu,
+				"es-PR",
+				"de-AT",
+				"en-AU",
+				tr,
+				pl,
+				"pt-BR",
+				vi,
+				lv,
+				"es-MX",
+				lt,
+				ru,
+				"es-DO",
+				"fr-CH",
+				"es-NI",
+				fr,
+				fi,
+				id,
+				nl,
+				th,
+				pt,
+				"de-CH",
+				bn,
+				"es-EC",
+				"pt-PT",
+				"es-BO",
+				ro,
+				ln,
+				"es-UY",
+				"es-HN",
+				hr,
+				hi,
+				ca,
+				zh,
+				"en-IN",
 			);
 			mainGroup = ADEBF27D2788C5040030AC08;
 			packageReferences = (
@@ -184,12 +617,35 @@
 			);
 			productRefGroup = ADEBF2872788C5040030AC08 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = ADBB047728E7C76800114348 /* Products */;
+					ProjectRef = ADBB047628E7C76800114348 /* FirebaseAuthUI.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				ADEBF2852788C5040030AC08 /* FridgeTrack */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		ADBB051F28E7C76800114348 /* FirebaseAuthUI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FirebaseAuthUI.framework;
+			remoteRef = ADBB051E28E7C76800114348 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		ADBB052128E7C76800114348 /* FirebaseAuthUITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = FirebaseAuthUITests.xctest;
+			remoteRef = ADBB052028E7C76800114348 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		ADEBF2842788C5040030AC08 /* Resources */ = {
@@ -210,8 +666,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADBB047328E7C2D000114348 /* LoginViewController.swift in Sources */,
 				ADEBF28A2788C5040030AC08 /* AppDelegate.swift in Sources */,
+				ADBF442C28E8F029007B34AA /* UserManager.swift in Sources */,
+				ADEBA20428F632C70036DFE5 /* UserView.swift in Sources */,
 				ADEBF29E2788C69E0030AC08 /* FridgeItem.swift in Sources */,
+				ADBF442A28E8EF97007B34AA /* FridgeTrackUser.swift in Sources */,
 				ADEBF2A22788CBE00030AC08 /* ItemTableViewCell.swift in Sources */,
 				ADA8B18028AC1F7800E925C3 /* AppColors.swift in Sources */,
 				ADBB045D28E66AF700114348 /* CartItem.swift in Sources */,
@@ -220,6 +680,7 @@
 				ADEBF2A02788C8610030AC08 /* ItemsInFridgeTableViewController.swift in Sources */,
 				ADBB046128E66DC000114348 /* CartTableViewCell.swift in Sources */,
 				ADEBF28C2788C5040030AC08 /* SceneDelegate.swift in Sources */,
+				ADBF442E28E8F38D007B34AA /* MainTabBarController.swift in Sources */,
 				ADEBF2A42789050C0030AC08 /* AddandEditTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,6 +688,97 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		ADBB048628E7C76800114348 /* FirebaseAuthUI.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADBB048728E7C76800114348 /* de */,
+				ADBB048828E7C76800114348 /* ur */,
+				ADBB048928E7C76800114348 /* he */,
+				ADBB048A28E7C76800114348 /* es-SV */,
+				ADBB048B28E7C76800114348 /* zh-Hant-TW */,
+				ADBB048C28E7C76800114348 /* ar */,
+				ADBB048D28E7C76800114348 /* el */,
+				ADBB048E28E7C76800114348 /* zh-Hans */,
+				ADBB048F28E7C76800114348 /* ja */,
+				ADBB049028E7C76800114348 /* fa */,
+				ADBB049128E7C76800114348 /* mr */,
+				ADBB049228E7C76800114348 /* es-GT */,
+				ADBB049328E7C76800114348 /* en */,
+				ADBB049428E7C76800114348 /* en-CA */,
+				ADBB049528E7C76800114348 /* uk */,
+				ADBB049628E7C76800114348 /* es-PY */,
+				ADBB049728E7C76800114348 /* gu */,
+				ADBB049828E7C76800114348 /* kn */,
+				ADBB049928E7C76800114348 /* nb */,
+				ADBB049A28E7C76800114348 /* es-US */,
+				ADBB049B28E7C76800114348 /* en-GB */,
+				ADBB049C28E7C76800114348 /* es */,
+				ADBB049D28E7C76800114348 /* es-VE */,
+				ADBB049E28E7C76800114348 /* es-CL */,
+				ADBB049F28E7C76800114348 /* sl */,
+				ADBB04A028E7C76800114348 /* da */,
+				ADBB04A128E7C76800114348 /* es-419 */,
+				ADBB04A228E7C76800114348 /* it */,
+				ADBB04A328E7C76800114348 /* bg */,
+				ADBB04A428E7C76800114348 /* sk */,
+				ADBB04A528E7C76800114348 /* sr-Latn */,
+				ADBB04A628E7C76800114348 /* nn-NO */,
+				ADBB04A728E7C76800114348 /* es-PA */,
+				ADBB04A828E7C76800114348 /* en-SG */,
+				ADBB04A928E7C76800114348 /* sr */,
+				ADBB04AA28E7C76800114348 /* ms */,
+				ADBB04AB28E7C76800114348 /* es-CR */,
+				ADBB04AC28E7C76800114348 /* ta */,
+				ADBB04AD28E7C76800114348 /* sv */,
+				ADBB04AE28E7C76800114348 /* cs */,
+				ADBB04AF28E7C76800114348 /* es-AR */,
+				ADBB04B028E7C76800114348 /* es-PE */,
+				ADBB04B128E7C76800114348 /* ko */,
+				ADBB04B228E7C76800114348 /* en-IE */,
+				ADBB04B328E7C76800114348 /* fil */,
+				ADBB04B428E7C76800114348 /* zh-Hant */,
+				ADBB04B528E7C76800114348 /* es-CO */,
+				ADBB04B628E7C76800114348 /* gsw */,
+				ADBB04B728E7C76800114348 /* en-ZA */,
+				ADBB04B828E7C76800114348 /* hu */,
+				ADBB04B928E7C76800114348 /* es-PR */,
+				ADBB04BA28E7C76800114348 /* de-AT */,
+				ADBB04BB28E7C76800114348 /* en-AU */,
+				ADBB04BC28E7C76800114348 /* tr */,
+				ADBB04BD28E7C76800114348 /* pl */,
+				ADBB04BE28E7C76800114348 /* pt-BR */,
+				ADBB04BF28E7C76800114348 /* vi */,
+				ADBB04C028E7C76800114348 /* lv */,
+				ADBB04C128E7C76800114348 /* es-MX */,
+				ADBB04C228E7C76800114348 /* lt */,
+				ADBB04C328E7C76800114348 /* ru */,
+				ADBB04C428E7C76800114348 /* es-DO */,
+				ADBB04C528E7C76800114348 /* fr-CH */,
+				ADBB04C628E7C76800114348 /* es-NI */,
+				ADBB04C728E7C76800114348 /* fr */,
+				ADBB04C828E7C76800114348 /* fi */,
+				ADBB04C928E7C76800114348 /* id */,
+				ADBB04CA28E7C76800114348 /* nl */,
+				ADBB04CB28E7C76800114348 /* th */,
+				ADBB04CC28E7C76800114348 /* pt */,
+				ADBB04CD28E7C76800114348 /* de-CH */,
+				ADBB04CE28E7C76800114348 /* bn */,
+				ADBB04CF28E7C76800114348 /* es-EC */,
+				ADBB04D028E7C76800114348 /* pt-PT */,
+				ADBB04D128E7C76800114348 /* es-BO */,
+				ADBB04D228E7C76800114348 /* ro */,
+				ADBB04D328E7C76800114348 /* ln */,
+				ADBB04D428E7C76800114348 /* es-UY */,
+				ADBB04D528E7C76800114348 /* es-HN */,
+				ADBB04D628E7C76800114348 /* hr */,
+				ADBB04D728E7C76800114348 /* hi */,
+				ADBB04D828E7C76800114348 /* ca */,
+				ADBB04D928E7C76800114348 /* zh */,
+				ADBB04DA28E7C76800114348 /* en-IN */,
+			);
+			name = FirebaseAuthUI.strings;
+			sourceTree = "<group>";
+		};
 		ADEBF28F2788C5040030AC08 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -367,6 +919,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FridgeTrack/FridgeTrack.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QN76D24532;
@@ -398,6 +951,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FridgeTrack/FridgeTrack.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QN76D24532;
@@ -479,10 +1033,21 @@
 			package = ADBB046628E7B7D600114348 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestoreSwift;
 		};
-		ADBB046F28E7B7D600114348 /* FirebaseMessaging */ = {
+		ADBB052628E7C8F300114348 /* FirebaseAuthUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = ADBB046628E7B7D600114348 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseMessaging;
+			productName = FirebaseAuthUI;
+		};
+		ADBB052828E7C8F300114348 /* FirebaseEmailAuthUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FirebaseEmailAuthUI;
+		};
+		ADBB052A28E7C8F300114348 /* FirebaseFacebookAuthUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FirebaseFacebookAuthUI;
+		};
+		ADBB052C28E7C8F300114348 /* FirebaseGoogleAuthUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FirebaseGoogleAuthUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

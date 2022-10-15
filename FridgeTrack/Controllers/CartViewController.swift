@@ -10,8 +10,8 @@ import UIKit
 class CartViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var usersStackView: UIStackView!
     
-
     var cartItems = [CartItem]()
     
     override func viewDidLoad() {
@@ -29,6 +29,37 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.backgroundColor = AppColors.bgColor
         tableView.layer.cornerRadius = 10
         tableView.rowHeight = 50
+        
+        if let user = UserManager.shared.user{
+            let userView = UserView(user: user)
+            //usersStackView.addSubview(userView.draw())
+            let loggedInUserStackView = UserView(user: user).draw()
+            var tap = UITapGestureRecognizer(target: self, action: #selector(self.tappedOnUser(_:)))
+            loggedInUserStackView.addGestureRecognizer(tap)
+            
+            usersStackView.addArrangedSubview(loggedInUserStackView)
+    
+            
+            let addPersonStackView = UserView().draw()
+            tap =  UITapGestureRecognizer(target: self, action: #selector(self.tappedOnAddUser(_:)))
+            addPersonStackView.addGestureRecognizer(tap)
+            
+            
+            usersStackView.addArrangedSubview(addPersonStackView)
+        }
+    }
+    
+    @objc func tappedOnUser(_ sender: UITapGestureRecognizer? = nil){
+        print("UserView Tapped")
+        // go to settings for user
+        //friend request
+     
+    }
+    
+    @objc func tappedOnAddUser(_ sender: UITapGestureRecognizer? = nil){
+        print("Add User Tapped")
+        // go to search for users
+     
     }
     
     @IBAction func addButtonTapped(_ sender: Any) {
